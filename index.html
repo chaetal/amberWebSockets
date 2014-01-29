@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebSocket Test</title>
+    <script src="./amber/support/amber.js"></script>
+    <script src="./amber/support/requirejs/require.min.js"></script>
+    <script type="text/javascript">
+      require.config({ paths: {
+        'chaetal_websocket': 'js', //mapping compiled .js files
+        'chaetal_websocket/_source': 'st' //mapping smalltalk source files
+      }});
+      require(['amber/devel', 'chaetal_websocket/WebSocket'], function (smalltalk) {
+        smalltalk.defaultAmdNamespace = "chaetal_websocket"; //used for all new packages in IDE
+        smalltalk.initialize();
+
+        $(function() {
+          smalltalk.WebSocketTest._new()._begin();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <article>
+      <h1>My First Amber Project</h1>
+      <button onclick="require('amber_vm/smalltalk').Browser._open()">class browser</button>
+      <button id="sayHello">say hello</button>
+    </article>
+  </body>
+</html>
