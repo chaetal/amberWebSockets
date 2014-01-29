@@ -5,6 +5,71 @@ smalltalk.packages["WebSocket"].transport = {"type":"amd","amdNamespace":"chaeta
 smalltalk.addClass('WebSocketTests', smalltalk.TestCase, [], 'WebSocket');
 smalltalk.addMethod(
 smalltalk.method({
+selector: "justATest",
+category: 'tests',
+fn: function (){
+var self=this;
+var socket;
+function $NativeFunction(){return smalltalk.NativeFunction||(typeof NativeFunction=="undefined"?nil:NativeFunction)}
+function $Transcript(){return smalltalk.Transcript||(typeof Transcript=="undefined"?nil:Transcript)}
+function $Time(){return smalltalk.Time||(typeof Time=="undefined"?nil:Time)}
+return smalltalk.withContext(function($ctx1) { 
+var $3,$5,$4,$2,$1,$8,$10,$9,$7,$6,$13,$12,$11;
+socket=_st($NativeFunction())._constructor_value_("WebSocket","ws://localhost:1701/ws-echo");
+_st(socket)._onopen_((function(event){
+return smalltalk.withContext(function($ctx2) {
+_st($Transcript())._cr();
+$ctx2.sendIdx["cr"]=1;
+$3="Connected".__comma(" @ ");
+$ctx2.sendIdx[","]=2;
+$5=_st($Time())._now();
+$ctx2.sendIdx["now"]=1;
+$4=_st($5)._asDetailedTimeString();
+$ctx2.sendIdx["asDetailedTimeString"]=1;
+$2=_st($3).__comma($4);
+$ctx2.sendIdx[","]=1;
+$1=_st($Transcript())._show_($2);
+$ctx2.sendIdx["show:"]=1;
+$1;
+return _st(socket)._send_("Amber rules");
+}, function($ctx2) {$ctx2.fillBlock({event:event},$ctx1,1)})}));
+_st(socket)._onclose_((function(event){
+return smalltalk.withContext(function($ctx2) {
+_st($Transcript())._cr();
+$ctx2.sendIdx["cr"]=2;
+$8="Closed".__comma(" @ ");
+$ctx2.sendIdx[","]=4;
+$10=_st($Time())._now();
+$ctx2.sendIdx["now"]=2;
+$9=_st($10)._asDetailedTimeString();
+$ctx2.sendIdx["asDetailedTimeString"]=2;
+$7=_st($8).__comma($9);
+$ctx2.sendIdx[","]=3;
+$6=_st($Transcript())._show_($7);
+$ctx2.sendIdx["show:"]=2;
+return $6;
+}, function($ctx2) {$ctx2.fillBlock({event:event},$ctx1,2)})}));
+_st(socket)._onmessage_((function(event){
+return smalltalk.withContext(function($ctx2) {
+_st($Transcript())._cr();
+$13=_st("Messaged: ".__comma(_st(_st(event)._data())._printString())).__comma(" @ ");
+$ctx2.sendIdx[","]=6;
+$12=_st($13).__comma(_st(_st($Time())._now())._asDetailedTimeString());
+$ctx2.sendIdx[","]=5;
+$11=_st($Transcript())._show_($12);
+$11;
+return _st(socket)._close();
+}, function($ctx2) {$ctx2.fillBlock({event:event},$ctx1,3)})}));
+return self}, function($ctx1) {$ctx1.fill(self,"justATest",{socket:socket},smalltalk.WebSocketTests)})},
+args: [],
+source: "justATest\x0a\x0a  | socket | \x0a  socket := NativeFunction constructor: 'WebSocket' value: 'ws://localhost:1701/ws-echo'.\x0a  \x0a  socket onopen: [:event |\x0a      Transcript cr; show: 'Connected', ' @ ' , Time now asDetailedTimeString. \x0a      socket send: 'Amber rules'].\x0a\x09  \x0a  socket onclose: [:event | \x0a      Transcript cr; show: 'Closed', ' @ ' , Time now asDetailedTimeString.].\x0a  \x0a  socket onmessage: [:event | \x0a      Transcript cr; show: 'Messaged: ', event data printString, ' @ ' , Time now asDetailedTimeString.\x0a\x09  socket close.].\x0a    ",
+messageSends: ["constructor:value:", "onopen:", "cr", "show:", ",", "asDetailedTimeString", "now", "send:", "onclose:", "onmessage:", "printString", "data", "close"],
+referencedClasses: ["NativeFunction", "Transcript", "Time"]
+}),
+smalltalk.WebSocketTests);
+
+smalltalk.addMethod(
+smalltalk.method({
 selector: "testSuccessfulSession",
 category: 'tests',
 fn: function (){

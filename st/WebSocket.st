@@ -5,6 +5,23 @@ TestCase subclass: #WebSocketTests
 
 !WebSocketTests methodsFor: 'tests'!
 
+justATest
+
+  | socket | 
+  socket := NativeFunction constructor: 'WebSocket' value: 'ws://localhost:1701/ws-echo'.
+  
+  socket onopen: [:event |
+      Transcript cr; show: 'Connected', ' @ ' , Time now asDetailedTimeString. 
+      socket send: 'Amber rules'].
+	  
+  socket onclose: [:event | 
+      Transcript cr; show: 'Closed', ' @ ' , Time now asDetailedTimeString.].
+  
+  socket onmessage: [:event | 
+      Transcript cr; show: 'Messaged: ', event data printString, ' @ ' , Time now asDetailedTimeString.
+	  socket close.].
+!
+
 testSuccessfulSession
   | socket connected closed messaged |
   
