@@ -1,10 +1,14 @@
 Smalltalk current createPackage: 'WebSocket'!
-Object subclass: #WebSocketTests
+TestCase subclass: #WebSocketTests
 	instanceVariableNames: ''
 	package: 'WebSocket'!
 
-!WebSocketTests methodsFor: 'not yet classified'!
+!WebSocketTests methodsFor: 'tests'!
 
 testSuccessfulConnection
+  | socket |
+  socket := NativeFunction constructor: 'WebSocket' value: 'ws://echo.websocket.org'.
+  socket onopen: [:event | Transcript cr; show: 'Connected!!!!!!'].
+  Transcript cr; show: 'Main thread finished'.
 ! !
 
