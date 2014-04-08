@@ -1,0 +1,1275 @@
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: receiver of "findTokens:" is nil
+31 March 2014 1:20:21.960783 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 Jan 29 2014
+NBCogit NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 Jan 29 2014
+https://github.com/pharo-project/pharo-vm.git Commit: ef5832e6f70e5b24e8b9b1f4b8509a62b6c88040 Date: 2014-01-26 15:34:28 +0100 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14794
+
+Image: Pharo3.0 [Latest update: #30731]
+
+UndefinedObject(Object)>>doesNotUnderstand: #findTokens:
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	findTokens: '/'
+		exception: 	MessageNotUnderstood: receiver of "findTokens:" is nil
+		resumeValue: 	nil
+	Receiver's instance variables: 
+nil
+
+ZnWebSocketDelegate>>prefixFromString:
+	Receiver: a ZnWebSocketDelegate
+	Arguments and temporary variables: 
+		string: 	nil
+	Receiver's instance variables: 
+		prefix: 	nil
+		handler: 	nil
+
+
+ZnWebSocketDelegate class>>map:to:
+	Receiver: ZnWebSocketDelegate
+	Arguments and temporary variables: 
+		prefix: 	nil
+		handler: 	[ :val | self halt ]
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#continuation->ZnWebSocketDelegate>>#continuatio...etc...
+		format: 	134
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#prefix #handler)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#ZnWebSocketDelegate
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Zinc-WebSocket-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ZnWebSocket class>>startServerOn:prefix:do:
+	Receiver: ZnWebSocket
+	Arguments and temporary variables: 
+		port: 	9999
+		prefix: 	nil
+		handler: 	[ :val | self halt ]
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#close->ZnWebSocket>>#close #handleControlFrame:...etc...
+		format: 	136
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#stream #role #log)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#ZnWebSocket
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Zinc-WebSocket-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ZnWebSocket class>>startServerOn:do:
+	Receiver: ZnWebSocket
+	Arguments and temporary variables: 
+		port: 	9999
+		handler: 	[ :val | self halt ]
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#close->ZnWebSocket>>#close #handleControlFrame:...etc...
+		format: 	136
+		layout: 	a FixedLayout
+		instanceVariables: 	#(#stream #role #log)
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#ZnWebSocket
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Zinc-WebSocket-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'server  := ZnWebSocket startServerOn: 9999 do: [ :val | self h...etc...
+		itsSelection: 	a Text for 'server  := ZnWebSocket startServerOn: 9999 do: [ :val...etc...
+		itsSelectionString: 	'server  := ZnWebSocket startServerOn: 9999 do: [ :val | se...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	server := ZnWebSocket startServerOn: 9999 do: [ :val | self halt ].
+...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+SmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a SmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		morph: 	a TextMorphForEditView(489947136)
+		selectionShowing: 	true
+		model: 	a Workspace
+		editingState: 	a SmalltalkEditingState
+
+
+SmalltalkEditor>>evaluateSelection
+	Receiver: a SmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		morph: 	a TextMorphForEditView(489947136)
+		selectionShowing: 	true
+		model: 	a Workspace
+		editingState: 	a SmalltalkEditingState
+
+
+[ textMorph editor evaluateSelection ] in PluggableTextMorph>>doIt
+	Receiver: a PluggableTextMorph(950796288)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(26.0@36.0) corner: (614.0@682.0)
+		owner: 	a SystemWindow(563609600)
+		submorphs: 	an Array(a TransformMorph(995360768))
+		fullBounds: 	(26@36) corner: (614@682)
+		color: 	NewColor white
+		extension: 	a MorphExtension (468713472) [other:  (kmDispatcher -> a KMDispatche...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.784 g: 0.784 b: 0.784 alpha: 1.0)
+		model: 	a Workspace
+		open: 	false
+		accessor: 	nil
+		scrollBar: 	a ScrollBar(990642176)
+		scroller: 	a TransformMorph(995360768)
+		getMenuSelector: 	#codePaneMenu:shifted:
+		getMenuTitleSelector: 	nil
+		hasFocus: 	true
+		hScrollBar: 	a ScrollBar(1005060096)
+		textMorph: 	a TextMorphForEditView(489947136)
+		getTextSelector: 	#contents
+		setTextSelector: 	#acceptContents:
+		getSelectionSelector: 	nil
+		hasUnacceptedEdits: 	true
+		askBeforeDiscardingEdits: 	true
+		selectionInterval: 	(397 to: 553)
+		hasEditingConflicts: 	false
+		acceptAction: 	nil
+		getColorSelector: 	nil
+		unstyledAcceptText: 	nil
+		styler: 	a SHTextStylerST80
+		autoAccept: 	nil
+		enabled: 	true
+		getEnabledSelector: 	nil
+		highlights: 	an OrderedCollection()
+		acceptOnFocusChange: 	nil
+		selectionColor: 	nil
+		alwaysAccept: 	nil
+		changedAction: 	nil
+		doubleClickSelector: 	nil
+		setSelectionSelector: 	nil
+
+
+[ result := editBlock value ] in PluggableTextMorph>>handleEdit:
+	Receiver: a PluggableTextMorph(950796288)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph editor evaluateSelection ]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(26.0@36.0) corner: (614.0@682.0)
+		owner: 	a SystemWindow(563609600)
+		submorphs: 	an Array(a TransformMorph(995360768))
+		fullBounds: 	(26@36) corner: (614@682)
+		color: 	NewColor white
+		extension: 	a MorphExtension (468713472) [other:  (kmDispatcher -> a KMDispatche...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.784 g: 0.784 b: 0.784 alpha: 1.0)
+		model: 	a Workspace
+		open: 	false
+		accessor: 	nil
+		scrollBar: 	a ScrollBar(990642176)
+		scroller: 	a TransformMorph(995360768)
+		getMenuSelector: 	#codePaneMenu:shifted:
+		getMenuTitleSelector: 	nil
+		hasFocus: 	true
+		hScrollBar: 	a ScrollBar(1005060096)
+		textMorph: 	a TextMorphForEditView(489947136)
+		getTextSelector: 	#contents
+		setTextSelector: 	#acceptContents:
+		getSelectionSelector: 	nil
+		hasUnacceptedEdits: 	true
+		askBeforeDiscardingEdits: 	true
+		selectionInterval: 	(397 to: 553)
+		hasEditingConflicts: 	false
+		acceptAction: 	nil
+		getColorSelector: 	nil
+		unstyledAcceptText: 	nil
+		styler: 	a SHTextStylerST80
+		autoAccept: 	nil
+		enabled: 	true
+		getEnabledSelector: 	nil
+		highlights: 	an OrderedCollection()
+		acceptOnFocusChange: 	nil
+		selectionColor: 	nil
+		alwaysAccept: 	nil
+		changedAction: 	nil
+		doubleClickSelector: 	nil
+		setSelectionSelector: 	nil
+
+
+TextMorphForEditView(TextMorph)>>handleEdit:
+	Receiver: a TextMorphForEditView(489947136)
+	Arguments and temporary variables: 
+		editBlock: 	[ result := editBlock value ]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@626)
+		owner: 	a TransformMorph(995360768)
+		submorphs: 	#()
+		fullBounds: 	(0@0) corner: (580@626)
+		color: 	NewColor black
+		extension: 	a MorphExtension (538705920) [other:  (kmDispatcher -> a KMDispatche...etc...
+		borderWidth: 	0
+		borderColor: 	NewColor black
+		textStyle: 	a TextStyle Bitmap DejaVu Sans 9
+		text: 	a Text for 'Gofer it
+  url: ''http://mc.stfx.eu/ZincHTTPComponents'';
+  c...etc...
+		wrapFlag: 	true
+		paragraph: 	a Paragraph
+		editor: 	a SmalltalkEditor
+		container: 	nil
+		predecessor: 	nil
+		successor: 	nil
+		backgroundColor: 	nil
+		margins: 	(0@0) corner: (0@0)
+		defaultColor: 	a TextColor code: NewColor black
+		editView: 	a PluggableTextMorph(950796288)
+		acceptOnCR: 	false
+		autoAccept: 	false
+		acceptOnFocusChange: 	false
+		selectionColor: 	nil
+
+
+PluggableTextMorph>>handleEdit:
+	Receiver: a PluggableTextMorph(950796288)
+	Arguments and temporary variables: 
+		result: 	nil
+		editBlock: 	[ textMorph editor evaluateSelection ]
+	Receiver's instance variables: 
+		bounds: 	(26.0@36.0) corner: (614.0@682.0)
+		owner: 	a SystemWindow(563609600)
+		submorphs: 	an Array(a TransformMorph(995360768))
+		fullBounds: 	(26@36) corner: (614@682)
+		color: 	NewColor white
+		extension: 	a MorphExtension (468713472) [other:  (kmDispatcher -> a KMDispatche...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.784 g: 0.784 b: 0.784 alpha: 1.0)
+		model: 	a Workspace
+		open: 	false
+		accessor: 	nil
+		scrollBar: 	a ScrollBar(990642176)
+		scroller: 	a TransformMorph(995360768)
+		getMenuSelector: 	#codePaneMenu:shifted:
+		getMenuTitleSelector: 	nil
+		hasFocus: 	true
+		hScrollBar: 	a ScrollBar(1005060096)
+		textMorph: 	a TextMorphForEditView(489947136)
+		getTextSelector: 	#contents
+		setTextSelector: 	#acceptContents:
+		getSelectionSelector: 	nil
+		hasUnacceptedEdits: 	true
+		askBeforeDiscardingEdits: 	true
+		selectionInterval: 	(397 to: 553)
+		hasEditingConflicts: 	false
+		acceptAction: 	nil
+		getColorSelector: 	nil
+		unstyledAcceptText: 	nil
+		styler: 	a SHTextStylerST80
+		autoAccept: 	nil
+		enabled: 	true
+		getEnabledSelector: 	nil
+		highlights: 	an OrderedCollection()
+		acceptOnFocusChange: 	nil
+		selectionColor: 	nil
+		alwaysAccept: 	nil
+		changedAction: 	nil
+		doubleClickSelector: 	nil
+		setSelectionSelector: 	nil
+
+
+PluggableTextMorph>>doIt
+	Receiver: a PluggableTextMorph(950796288)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(26.0@36.0) corner: (614.0@682.0)
+		owner: 	a SystemWindow(563609600)
+		submorphs: 	an Array(a TransformMorph(995360768))
+		fullBounds: 	(26@36) corner: (614@682)
+		color: 	NewColor white
+		extension: 	a MorphExtension (468713472) [other:  (kmDispatcher -> a KMDispatche...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.784 g: 0.784 b: 0.784 alpha: 1.0)
+		model: 	a Workspace
+		open: 	false
+		accessor: 	nil
+		scrollBar: 	a ScrollBar(990642176)
+		scroller: 	a TransformMorph(995360768)
+		getMenuSelector: 	#codePaneMenu:shifted:
+		getMenuTitleSelector: 	nil
+		hasFocus: 	true
+		hScrollBar: 	a ScrollBar(1005060096)
+		textMorph: 	a TextMorphForEditView(489947136)
+		getTextSelector: 	#contents
+		setTextSelector: 	#acceptContents:
+		getSelectionSelector: 	nil
+		hasUnacceptedEdits: 	true
+		askBeforeDiscardingEdits: 	true
+		selectionInterval: 	(397 to: 553)
+		hasEditingConflicts: 	false
+		acceptAction: 	nil
+		getColorSelector: 	nil
+		unstyledAcceptText: 	nil
+		styler: 	a SHTextStylerST80
+		autoAccept: 	nil
+		enabled: 	true
+		getEnabledSelector: 	nil
+		highlights: 	an OrderedCollection()
+		acceptOnFocusChange: 	nil
+		selectionColor: 	nil
+		alwaysAccept: 	nil
+		changedAction: 	nil
+		doubleClickSelector: 	nil
+		setSelectionSelector: 	nil
+
+
+Workspace(Object)>>perform:orSendTo:
+	Receiver: a Workspace
+	Arguments and temporary variables: 
+		selector: 	#doIt
+		otherTarget: 	a PluggableTextMorph(950796288)
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(563609600) a PluggableTextMorph(95...etc...
+		bindings: 	a Dictionary(#server->nil #webSocket->a ZnWebSocket(#client) )
+		acceptDroppedMorphs: 	false
+		acceptAction: 	nil
+		mustDeclareVariables: 	false
+		fileName: 	nil
+		lineEnding: 	#cr
+		encoding: 	'utf-8'
+		stylingActive: 	true
+		contents: 	a Text for 'Gofer it
+  url: ''http://mc.stfx.eu/ZincHTTPComponents'';...etc...
+
+
+[ 
+| selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ 
+		selArgCount = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: evt) ] ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(26738688)'Do it'
+	Arguments and temporary variables: 
+		evt: 	[(130@350) mouseUp 639174 nil]
+		w: 	a WorldMorph(511705088) [world]
+		selArgCount: 	2
+	Receiver's instance variables: 
+		bounds: 	(92.0@333.0) corner: (235.0@351.0)
+		owner: 	a MenuMorph(1045954560)
+		submorphs: 	#()
+		fullBounds: 	(92.0@333.0) corner: (235.0@351.0)
+		color: 	NewColor black
+		extension: 	a MorphExtension (50069504)
+		font: 	a StrikeFont(Bitmap DejaVu Sans 9 14)
+		emphasis: 	0
+		contents: 	'Do it'
+		hasFocus: 	false
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a Workspace
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#doIt a PluggableTextMorph(950796288))
+		icon: 	ColorForm(16x16x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'd'
+
+
+BlockClosure>>ensure:
+	Receiver: [ 
+| selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := selec...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ oldcursor show ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+		startpc: 	134
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r100000000000000000000...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+| selArgCount |
+"show cursor in case item opens a new MVC window"
+(s...etc...
+		oldcursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(26738688)'Do it'
+	Arguments and temporary variables: 
+		evt: 	[(130@350) mouseUp 639174 nil]
+		w: 	a WorldMorph(511705088) [world]
+	Receiver's instance variables: 
+		bounds: 	(92.0@333.0) corner: (235.0@351.0)
+		owner: 	a MenuMorph(1045954560)
+		submorphs: 	#()
+		fullBounds: 	(92.0@333.0) corner: (235.0@351.0)
+		color: 	NewColor black
+		extension: 	a MorphExtension (50069504)
+		font: 	a StrikeFont(Bitmap DejaVu Sans 9 14)
+		emphasis: 	0
+		contents: 	'Do it'
+		hasFocus: 	false
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a Workspace
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#doIt a PluggableTextMorph(950796288))
+		icon: 	ColorForm(16x16x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'd'
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+	Receiver: a ToggleMenuItemMorph(26738688)'Do it'
+	Arguments and temporary variables: 
+		evt: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(92.0@333.0) corner: (235.0@351.0)
+		owner: 	a MenuMorph(1045954560)
+		submorphs: 	#()
+		fullBounds: 	(92.0@333.0) corner: (235.0@351.0)
+		color: 	NewColor black
+		extension: 	a MorphExtension (50069504)
+		font: 	a StrikeFont(Bitmap DejaVu Sans 9 14)
+		emphasis: 	0
+		contents: 	'Do it'
+		hasFocus: 	false
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a Workspace
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#doIt a PluggableTextMorph(950796288))
+		icon: 	ColorForm(16x16x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'd'
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+	Receiver: a ToggleMenuItemMorph(26738688)'Do it'
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(92.0@333.0) corner: (235.0@351.0)
+		owner: 	a MenuMorph(1045954560)
+		submorphs: 	#()
+		fullBounds: 	(92.0@333.0) corner: (235.0@351.0)
+		color: 	NewColor black
+		extension: 	a MorphExtension (50069504)
+		font: 	a StrikeFont(Bitmap DejaVu Sans 9 14)
+		emphasis: 	0
+		contents: 	'Do it'
+		hasFocus: 	false
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a Workspace
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#doIt a PluggableTextMorph(950796288))
+		icon: 	ColorForm(16x16x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'd'
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(130@350) mouseUp 639174 nil]
+	Arguments and temporary variables: 
+		anObject: 	a ToggleMenuItemMorph(26738688)'Do it'
+	Receiver's instance variables: 
+		timeStamp: 	639174
+		source: 	a HandMorph(760479744)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(130@350)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+ToggleMenuItemMorph(Morph)>>handleEvent:
+	Receiver: a ToggleMenuItemMorph(26738688)'Do it'
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(92.0@333.0) corner: (235.0@351.0)
+		owner: 	a MenuMorph(1045954560)
+		submorphs: 	#()
+		fullBounds: 	(92.0@333.0) corner: (235.0@351.0)
+		color: 	NewColor black
+		extension: 	a MorphExtension (50069504)
+		font: 	a StrikeFont(Bitmap DejaVu Sans 9 14)
+		emphasis: 	0
+		contents: 	'Do it'
+		hasFocus: 	false
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a Workspace
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#doIt a PluggableTextMorph(950796288))
+		icon: 	ColorForm(16x16x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'd'
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		aMorph: 	a ToggleMenuItemMorph(26738688)'Do it'
+		localEvt: 	nil
+		index: 	1
+		child: 	nil
+		morphs: 	#()
+		inside: 	true
+	Receiver's instance variables: 
+		lastType: 	#mouseUp
+		lastDispatch: 	#dispatchDefault:with:
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		aMorph: 	a ToggleMenuItemMorph(26738688)'Do it'
+	Receiver's instance variables: 
+		lastType: 	#mouseUp
+		lastDispatch: 	#dispatchDefault:with:
+
+
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+	Receiver: a ToggleMenuItemMorph(26738688)'Do it'
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(92.0@333.0) corner: (235.0@351.0)
+		owner: 	a MenuMorph(1045954560)
+		submorphs: 	#()
+		fullBounds: 	(92.0@333.0) corner: (235.0@351.0)
+		color: 	NewColor black
+		extension: 	a MorphExtension (50069504)
+		font: 	a StrikeFont(Bitmap DejaVu Sans 9 14)
+		emphasis: 	0
+		contents: 	'Do it'
+		hasFocus: 	false
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a Workspace
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#doIt a PluggableTextMorph(950796288))
+		icon: 	ColorForm(16x16x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'd'
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		aMorph: 	a MenuMorph(1045954560)
+		localEvt: 	[(130@350) mouseUp 639174 nil]
+		index: 	1
+		child: 	a ToggleMenuItemMorph(26738688)'Do it'
+		morphs: 	an Array(a ToggleMenuItemMorph(26738688)'Do it' a ToggleMenuItemMorph(1...etc...
+		inside: 	false
+	Receiver's instance variables: 
+		lastType: 	#mouseUp
+		lastDispatch: 	#dispatchDefault:with:
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		aMorph: 	a MenuMorph(1045954560)
+	Receiver's instance variables: 
+		lastType: 	#mouseUp
+		lastDispatch: 	#dispatchDefault:with:
+
+
+MenuMorph(Morph)>>processEvent:using:
+	Receiver: a MenuMorph(1045954560)
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(87.0@328.0) corner: (240.0@668.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(26738688)'Do it' a ToggleMenuItemMorp...etc...
+		fullBounds: 	(87.0@328.0) corner: (240.0@668.0)
+		color: 	(Color r: 0.894 g: 0.894 b: 0.894 alpha: 1.0)
+		extension: 	a MorphExtension (31719424) [other:  (basicColor -> (Color r: 0.8230...etc...
+		borderWidth: 	2
+		borderColor: 	(Color r: 0.674 g: 0.674 b: 0.674 alpha: 1.0)
+		defaultTarget: 	a Workspace
+		selectedItem: 	a ToggleMenuItemMorph(26738688)'Do it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		activatorDockingBar: 	nil
+		embeddable: 	nil
+		menuItems: 	an OrderedCollection(a ToggleMenuItemMorph(26738688)'Do it' a Toggle...etc...
+
+
+MenuMorph(Morph)>>processEvent:
+	Receiver: a MenuMorph(1045954560)
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(87.0@328.0) corner: (240.0@668.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(26738688)'Do it' a ToggleMenuItemMorp...etc...
+		fullBounds: 	(87.0@328.0) corner: (240.0@668.0)
+		color: 	(Color r: 0.894 g: 0.894 b: 0.894 alpha: 1.0)
+		extension: 	a MorphExtension (31719424) [other:  (basicColor -> (Color r: 0.8230...etc...
+		borderWidth: 	2
+		borderColor: 	(Color r: 0.674 g: 0.674 b: 0.674 alpha: 1.0)
+		defaultTarget: 	a Workspace
+		selectedItem: 	a ToggleMenuItemMorph(26738688)'Do it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		activatorDockingBar: 	nil
+		embeddable: 	nil
+		menuItems: 	an OrderedCollection(a ToggleMenuItemMorph(26738688)'Do it' a Toggle...etc...
+
+
+MenuMorph>>handleFocusEvent:
+	Receiver: a MenuMorph(1045954560)
+	Arguments and temporary variables: 
+		evt: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(87.0@328.0) corner: (240.0@668.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(26738688)'Do it' a ToggleMenuItemMorp...etc...
+		fullBounds: 	(87.0@328.0) corner: (240.0@668.0)
+		color: 	(Color r: 0.894 g: 0.894 b: 0.894 alpha: 1.0)
+		extension: 	a MorphExtension (31719424) [other:  (basicColor -> (Color r: 0.8230...etc...
+		borderWidth: 	2
+		borderColor: 	(Color r: 0.674 g: 0.674 b: 0.674 alpha: 1.0)
+		defaultTarget: 	a Workspace
+		selectedItem: 	a ToggleMenuItemMorph(26738688)'Do it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		activatorDockingBar: 	nil
+		embeddable: 	nil
+		menuItems: 	an OrderedCollection(a ToggleMenuItemMorph(26738688)'Do it' a Toggle...etc...
+
+
+[ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(760479744)
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		focusHolder: 	a MenuMorph(1045954560)
+		aBlock: 	[ self mouseFocus: nil ]
+		w: 	a WorldMorph(511705088) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(130@350) corner: (146@366)
+		owner: 	a WorldMorph(511705088) [world]
+		submorphs: 	#()
+		fullBounds: 	(130@350) corner: (146@366)
+		color: 	NewColor blue
+		extension: 	a MorphExtension (114556928)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(130@350) mouseOver nil nil]
+		targetOffset: 	(38.0@17.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 639174 130 350 0 0 0 1)
+		lastKeyScanCode: 	8
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+BlockClosure>>on:do:
+	Receiver: [ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+		handlerActive: 	false
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(511705088) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder ha...etc...
+		priorWorld: 	a WorldMorph(511705088) [world]
+		priorHand: 	a HandMorph(760479744)
+		priorEvent: 	[(130@350) mouseOver red nil nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1280@750)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(984088576) a SystemWindow(563609600) a Syste...etc...
+		fullBounds: 	(0@0) corner: (1280@750)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (552861696) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(760479744)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		focusHolder: 	a MenuMorph(1045954560)
+		aBlock: 	[ self mouseFocus: nil ]
+		w: 	a WorldMorph(511705088) [world]
+	Receiver's instance variables: 
+		bounds: 	(130@350) corner: (146@366)
+		owner: 	a WorldMorph(511705088) [world]
+		submorphs: 	#()
+		fullBounds: 	(130@350) corner: (146@366)
+		color: 	NewColor blue
+		extension: 	a MorphExtension (114556928)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(130@350) mouseOver nil nil]
+		targetOffset: 	(38.0@17.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 639174 130 350 0 0 0 1)
+		lastKeyScanCode: 	8
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(760479744)
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		focusHolder: 	a MenuMorph(1045954560)
+		aBlock: 	[ self mouseFocus: nil ]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(130@350) corner: (146@366)
+		owner: 	a WorldMorph(511705088) [world]
+		submorphs: 	#()
+		fullBounds: 	(130@350) corner: (146@366)
+		color: 	NewColor blue
+		extension: 	a MorphExtension (114556928)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(130@350) mouseOver nil nil]
+		targetOffset: 	(38.0@17.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 639174 130 350 0 0 0 1)
+		lastKeyScanCode: 	8
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>sendMouseEvent:
+	Receiver: a HandMorph(760479744)
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(130@350) corner: (146@366)
+		owner: 	a WorldMorph(511705088) [world]
+		submorphs: 	#()
+		fullBounds: 	(130@350) corner: (146@366)
+		color: 	NewColor blue
+		extension: 	a MorphExtension (114556928)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(130@350) mouseOver nil nil]
+		targetOffset: 	(38.0@17.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 639174 130 350 0 0 0 1)
+		lastKeyScanCode: 	8
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>handleEvent:
+	Receiver: a HandMorph(760479744)
+	Arguments and temporary variables: 
+		anEvent: 	[(130@350) mouseUp 639174 nil]
+		evt: 	[(130@350) mouseUp 639174 nil]
+	Receiver's instance variables: 
+		bounds: 	(130@350) corner: (146@366)
+		owner: 	a WorldMorph(511705088) [world]
+		submorphs: 	#()
+		fullBounds: 	(130@350) corner: (146@366)
+		color: 	NewColor blue
+		extension: 	a MorphExtension (114556928)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(130@350) mouseOver nil nil]
+		targetOffset: 	(38.0@17.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 639174 130 350 0 0 0 1)
+		lastKeyScanCode: 	8
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>processEvents
+	Receiver: a HandMorph(760479744)
+	Arguments and temporary variables: 
+		evt: 	[(130@350) mouseUp 639174 nil]
+		evtBuf: 	#(1 639174 130 350 0 0 0 1)
+		type: 	1
+		hadAny: 	false
+	Receiver's instance variables: 
+		bounds: 	(130@350) corner: (146@366)
+		owner: 	a WorldMorph(511705088) [world]
+		submorphs: 	#()
+		fullBounds: 	(130@350) corner: (146@366)
+		color: 	NewColor blue
+		extension: 	a MorphExtension (114556928)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(130@350) mouseOver nil nil]
+		targetOffset: 	(38.0@17.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 639174 130 350 0 0 0 1)
+		lastKeyScanCode: 	8
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+
+--- The full stack ---
+UndefinedObject(Object)>>doesNotUnderstand: #findTokens:
+ZnWebSocketDelegate>>prefixFromString:
+ZnWebSocketDelegate class>>map:to:
+ZnWebSocket class>>startServerOn:prefix:do:
+ZnWebSocket class>>startServerOn:do:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+SmalltalkEditor>>evaluateSelectionAndDo:
+SmalltalkEditor>>evaluateSelection
+[ textMorph editor evaluateSelection ] in PluggableTextMorph>>doIt
+[ result := editBlock value ] in PluggableTextMorph>>handleEdit:
+TextMorphForEditView(TextMorph)>>handleEdit:
+PluggableTextMorph>>handleEdit:
+PluggableTextMorph>>doIt
+Workspace(Object)>>perform:orSendTo:
+[ 
+| selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ 
+		selArgCount = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: evt) ] ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>dispatchEvent:with:
+MenuMorph(Morph)>>processEvent:using:
+MenuMorph(Morph)>>processEvent:
+MenuMorph>>handleFocusEvent:
+[ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldState>>doOneSubCycleFor:
+WorldMorph>>doOneSubCycle
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+MenuMorph>>invokeModal:
+MenuMorph>>invokeModal
+PluggableTextMorph>>yellowButtonActivity:
+SmalltalkEditor(TextEditor)>>mouseUp:
+[ editor mouseUp: evt ] in TextMorphForEditView(TextMorph)>>mouseUp:
+TextMorphForEditView(TextMorph)>>handleInteraction:
+TextMorphForEditView>>handleInteraction:
+TextMorphForEditView(TextMorph)>>mouseUp:
+TextMorphForEditView>>mouseUp:
+TextMorphForEditView(Morph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+TextMorphForEditView(Morph)>>handleEvent:
+TextMorphForEditView(Morph)>>handleFocusEvent:
+[ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+User Interrupt
+31 March 2014 1:20:49.378598 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 Jan 29 2014
+NBCogit NativeBoost-CogPlugin-GuillermoPolito.19 uuid: acc98e51-2fba-4841-a965-2975997bba66 Jan 29 2014
+https://github.com/pharo-project/pharo-vm.git Commit: ef5832e6f70e5b24e8b9b1f4b8509a62b6c88040 Date: 2014-01-26 15:34:28 +0100 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14794
+
+Image: Pharo3.0 [Latest update: #30731]
+
+[ delaySemaphore wait ] in Delay>>wait
+	Receiver: a Delay(20 msecs)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		delayDuration: 	20
+		resumptionTime: 	666636
+		delaySemaphore: 	a Semaphore()
+		beingWaitedOn: 	false
+
+
+BlockClosure>>ifCurtailed:
+	Receiver: [ delaySemaphore wait ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self unschedule ]
+		complete: 	nil
+		result: 	nil
+	Receiver's instance variables: 
+		outerContext: 	Delay>>wait
+		startpc: 	36
+		numArgs: 	0
+
+
+Delay>>wait
+	Receiver: a Delay(20 msecs)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		delayDuration: 	20
+		resumptionTime: 	666636
+		delaySemaphore: 	a Semaphore()
+		beingWaitedOn: 	false
+
+
+WorldState>>interCyclePause:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		milliSecs: 	20
+		currentTime: 	666616
+		wait: 	20
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (1280@750)
+		canvas: 	a FormCanvas on: DisplayScreen(1280x750x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#onBlinkCursor -> a TextMorphForEditView(489947136...etc...
+		lastStepTime: 	666616
+		lastStepMessage: 	nil
+		lastCycleTime: 	666616
+		alarms: 	a Heap()
+		lastAlarmTime: 	666616
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(511705088) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (1280@750)
+		canvas: 	a FormCanvas on: DisplayScreen(1280x750x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#onBlinkCursor -> a TextMorphForEditView(489947136...etc...
+		lastStepTime: 	666616
+		lastStepMessage: 	nil
+		lastCycleTime: 	666616
+		alarms: 	a Heap()
+		lastAlarmTime: 	666616
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldMorph>>doOneCycle
+	Receiver: a WorldMorph(511705088) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1280@750)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(984088576) a SystemWindow(563609600) a Syste...etc...
+		fullBounds: 	(0@0) corner: (1280@750)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (552861696) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+
+
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+	Receiver: a MorphicUIManager
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		interactiveParser: 	nil
+		activeTranscript: 	Transcript
+
+
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	MorphicUIManager>>spawnNewProcess
+		startpc: 	65
+		numArgs: 	0
+
+
+
+--- The full stack ---
+[ delaySemaphore wait ] in Delay>>wait
+BlockClosure>>ifCurtailed:
+Delay>>wait
+WorldState>>interCyclePause:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
